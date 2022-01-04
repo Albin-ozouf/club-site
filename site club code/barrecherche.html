@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Tuto</title>
+</head>
+
+
+<body>
+    <img src="/IMG_4261.PNG" id="img">
+
+    <nav>
+        <p>Web Dev</p>
+        <input type="search" id="search" value="" onchange="ouvrirPage()"><input type="submit" id="btn" value="Chercher" onclick="ouvrirPage()">
+    </nav>
+
+    <p id="title">Web Dev</p>
+
+
+    <script>
+        function ouvrirPage(){
+            var a = document.getElementById("search").value;
+            if (a === ""){
+                alert("SVP REMPLISEZ ");
+            }
+            if (a === "tuto"){
+                window.open("/help1.html");
+            }
+            if (a === "jeux"){
+                window.open("/index-english.html");
+            }
+            
+        }
+    </script>
+
+    <style>
+        body{
+            background-color: rgb(61, 61, 61);
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(62, 202, 188);
+        }
+        nav p{
+            position: fixed;
+            left: 5%;
+            font-size: 30px;
+            color: black;
+            font-family: 'Bangers', cursive;
+            top: -20px;
+
+        }
+        #title{
+            margin-left: 40%;
+            margin-top: 30%;
+            color: white;
+            font-size: 100px;
+            font-family: 'Bangers', cursive;
+            color: rgb(62, 202, 188);
+        }
+        #search{
+            border: 1px solid black;
+            margin-top: 15px;
+            margin-left: 80%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #btn{
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: rgb(61, 61, 61) ;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #img{
+            width: 100%;
+            position: fixed;
+            top: -70%;
+            left: 0px;
+        }
+    </style>
+
+    
+</body>
+
+</html>
