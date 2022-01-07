@@ -3,10 +3,11 @@ body {
 }
 
 div.box {
-	max-width: 1200px;
-	min-width: 500px;
-	margin-left: 150px;
-	margin-right: 150px;
+	max-width: 80%;
+	min-width: 30%;
+	margin-left: 10%;
+	margin-right: 10%;
 	background-color: white;
+	padding: 1%;
 
 }
